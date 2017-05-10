@@ -1,0 +1,10 @@
+
+public class weapons {
+	private String [] revolver =new String[6];
+	private 
+	public String[] getRevolver(){
+		return revolver;
+	}
+	
+	}
+}

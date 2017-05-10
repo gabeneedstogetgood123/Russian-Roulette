@@ -1,0 +1,259 @@
+import java.io.*;
+import java.util.*;
+
+ 
+
+public class RussianRouletteDriver {
+
+ 
+
+    // Create a single shared BufferedReader for keyboard input
+007
+    private static BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));
+008
+ 
+009
+    // Create a single shared Random number generator
+010
+    private static Random generator = new Random();
+011
+ 
+012
+    // Program execution starts here
+013
+    public static void main(String[] args) throws IOException{
+014
+ 
+015
+        System.out.println("Welcome to Russian Roulette!");
+016
+ 
+017
+        // Initialize starting conditions
+018
+        int numPlayers = getNumPlayers();   // get number of players
+019
+        int startChamber = spinCylinder(); // generate a random starting chamber
+020
+        int bulletChamber = spinCylinder(); // generate a random chamber for the bullet
+021
+         
+022
+        while(true){
+023
+            // Play game
+024
+            int currentChamber = play(numPlayers, startChamber, bulletChamber);
+025
+            // Prompt action after one round of action
+026
+            int action = promptAction(currentChamber);
+027
+            // Determine end-of-round action
+028
+            if(action == 1 && currentChamber != -1){    // retain current chamber position
+029
+                startChamber = currentChamber;
+030
+            }else if(action == 1 && currentChamber == -1){ // gun has fired and start new game
+031
+                System.out.println("\nResetting game...");
+032
+                startChamber = spinCylinder();
+033
+                bulletChamber = spinCylinder();
+034
+            }else if(action == 2){
+035
+                System.out.println("\nRevolver's cylinder is spun.");
+036
+                startChamber = spinCylinder();
+037
+            }else if(action == 3){
+038
+                System.out.println("\nResetting game...");
+039
+                numPlayers = getNumPlayers();
+040
+                startChamber = spinCylinder();
+041
+                bulletChamber = spinCylinder();
+042
+            }else if(action == 4){ // end game
+043
+                System.out.println("\nEnding program...");
+044
+                System.exit(0);
+045
+            }
+046
+        }
+047
+ 
+048
+    }
+049
+ 
+050
+ 
+051
+    /* Generate a random number from 0 to 6 (inclusive)
+052
+     *  to represent a chamber
+053
+     */
+054
+    public static int spinCylinder() {
+055
+        return generator.nextInt(7);
+056
+    }
+057
+ 
+058
+    /* Plays one round of Russian Roulette and returns the
+059
+     * current chamber, a return value of -1 signifies a fired bullet
+060
+     */
+061
+    public static int play(int numPlayers, int currentChamber, int bulletChamber){
+062
+        for(int i = 1; i <= numPlayers; i++){
+063
+            System.out.println("\nPlayer " + i + " pulls the trigger...");
+064
+            // Revolve cylinder and fire gun
+065
+            if(currentChamber == 6){
+066
+                currentChamber = 0;
+067
+            }else{
+068
+                currentChamber++;
+069
+            }
+070
+            // Determine if chamber with bullet is fired
+071
+            if(currentChamber == bulletChamber){
+072
+                System.out.println("\n\t\tPlayer " + i + " is dead!");
+073
+                return -1;
+074
+            }else{
+075
+                System.out.println("\t\t...nothing happens.");
+076
+            }
+077
+        }
+078
+        return currentChamber;
+079
+    }
+080
+ 
+081
+    /* Prints end-of-round menu according to current game status */
+082
+    public static int promptAction(int gunFired) throws IOException {
+083
+        while(true){
+084
+            // Prompt user for number of players
+085
+            System.out.println("\nPlease select an action:");
+086
+            // Determines if gun has been fired
+087
+            if(gunFired == -1){
+088
+                System.out.println("1. New game (same players)");
+089
+            }else{
+090
+                System.out.println("1. Continue");
+091
+            }
+092
+            System.out.println("2. Spin cylinder (reset)");
+093
+            System.out.println("3. Change number of players");
+094
+            System.out.println("4. Quit");
+095
+ 
+096
+            System.out.print("\nEnter a choice: ");
+097
+            try{
+098
+                // Attempt to parse input String as int
+099
+                int action = Integer.parseInt(kb.readLine().trim());
+100
+                if(action < 1 || action > 4){
+101
+                    System.out.println("\nInvalid input. Please enter a valid value.");
+102
+                }else{
+103
+                    return action;
+104
+                }
+105
+            }catch(NumberFormatException e){
+106
+                System.out.println("\nInvalid input. Please enter a valid value.");
+107
+            }
+108
+        }
+109
+ 
+110
+    }
+111
+ 
+112
+    /* Prompts user for number of players */
+113
+    public static int getNumPlayers() throws IOException {
+114
+        while(true){
+115
+            // Prompt user for number of players
+116
+            System.out.print("\nEnter number of players: ");
+117
+            try{
+118
+                // Attempt to parse input String as int
+119
+                int numPlayers = Integer.parseInt(kb.readLine().trim());
+120
+                if(numPlayers > 0){
+121
+                    return numPlayers;
+122
+                }else{
+123
+                    System.out.println("\nInvalid input. Please enter a valid value.");
+124
+                }
+125
+            }catch(NumberFormatException e){
+126
+                System.out.println("\nInvalid input. Please enter a valid value.");
+127
+            }
+128
+        }
+129
+    }
+130
+}
+

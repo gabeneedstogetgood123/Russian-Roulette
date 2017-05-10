@@ -1,9 +1,16 @@
-import java.until.scanner;
+import java.util.Scanner;
 public class game {
 	public static void main (String[]args){
 		gamestarter start = new gamestarter();
 		System.out.println(start.Greeting());
-		Scanner bot = new Scanner(System.bot);
+		Scanner bot = new Scanner(System.in);
+		String response = bot.nextLine();
+		if(response.equals("yes")){
+			System.out.println(start.Response());
+		}
+		else {
+			System.out.println("BANG!");
+		}
 	}
 	
 }

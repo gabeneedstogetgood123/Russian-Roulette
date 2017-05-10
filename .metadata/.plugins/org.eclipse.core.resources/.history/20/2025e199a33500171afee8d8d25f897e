@@ -1,0 +1,7 @@
+
+public class weapons {
+	int [] revolver = new int [6];
+	for(int i=0;i<5;i++){
+		
+	}
+}
