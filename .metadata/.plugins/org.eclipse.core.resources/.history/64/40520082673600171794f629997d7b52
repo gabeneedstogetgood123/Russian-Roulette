@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class gamestarter {
 	public String Greeting(){
-		return "Do you want to play a game.";
+		return "Let us play a game.";
 	}
 	public String Response(){
 		String response="";

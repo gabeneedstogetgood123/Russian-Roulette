@@ -5,7 +5,7 @@ public class game {
 		System.out.println(start.Greeting());
 		Scanner bot = new Scanner(System.in);
 		String response = bot.nextLine();
-		if(response.equalsIgnoreCase("yes")){
+		if(response.equals("yes")){
 			System.out.println(start.Response());
 		}
 		else {
