@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;weapons.java&quot; tooltip=&quot;Russian-Roulette/src/weapons.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Russian-Roulette/src/weapons.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;RussianRoulette.java&quot; tooltip=&quot;alpha/src/RussianRoulette.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/alpha/src/RussianRoulette.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;RussianRouletteDriver.java&quot; tooltip=&quot;alpha/src/RussianRouletteDriver.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/alpha/src/RussianRouletteDriver.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;gamestarter.java&quot; tooltip=&quot;Russian-Roulette/src/gamestarter.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Russian-Roulette/src/gamestarter.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;game.java&quot; tooltip=&quot;Russian-Roulette/src/game.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Russian-Roulette/src/game.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_bFA88jQIEeefFYT3c4smXA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_bqEx0zQIEeefFYT3c4smXA" label="%trimmedwindow.label.eclipseSDK" x="25" y="25" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_bFA88jQIEeefFYT3c4smXA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_bqEx0zQIEeefFYT3c4smXA" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -84,7 +84,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_cPHYnjQIEeefFYT3c4smXA" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_cPHYkTQIEeefFYT3c4smXA"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_cPHYnzQIEeefFYT3c4smXA" containerData="7500" selectedElement="_cPHYoDQIEeefFYT3c4smXA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_cPHYnzQIEeefFYT3c4smXA" containerData="7500" selectedElement="_cPHYqTQIEeefFYT3c4smXA">
               <children xsi:type="basic:PartSashContainer" xmi:id="_cPHYoDQIEeefFYT3c4smXA" containerData="7500" selectedElement="_cPHYoTQIEeefFYT3c4smXA" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_cPHYoTQIEeefFYT3c4smXA" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_cOXxsDQIEeefFYT3c4smXA"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_cPHYojQIEeefFYT3c4smXA" containerData="2500">
@@ -101,6 +101,7 @@
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_cPHYqTQIEeefFYT3c4smXA" elementId="bottom" containerData="2500" selectedElement="_cPHYrjQIEeefFYT3c4smXA">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_cPHYqjQIEeefFYT3c4smXA" elementId="org.eclipse.ui.views.ProblemView" ref="_cOqspDQIEeefFYT3c4smXA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_cPHYqzQIEeefFYT3c4smXA" elementId="org.eclipse.jdt.ui.JavadocView" ref="_cO0doDQIEeefFYT3c4smXA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_cPHYrDQIEeefFYT3c4smXA" elementId="org.eclipse.jdt.ui.SourceView" ref="_cO0doTQIEeefFYT3c4smXA"/>
@@ -143,24 +144,21 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_cOXxsDQIEeefFYT3c4smXA" elementId="org.eclipse.ui.editorss" selectedElement="_to8NMTWfEeeUEYzQrwuleA">
-      <children xsi:type="basic:PartStack" xmi:id="_to8NMTWfEeeUEYzQrwuleA" elementId="PartStack@4593aeea" selectedElement="_gjmQEDQJEee57LP6de1zsQ">
-        <tags>active</tags>
+      <children xsi:type="basic:PartStack" xmi:id="_to8NMTWfEeeUEYzQrwuleA" elementId="PartStack@4593aeea" selectedElement="_PdgJUDWfEeeUEYzQrwuleA">
         <children xsi:type="basic:Part" xmi:id="_gjmQEDQJEee57LP6de1zsQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="game.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;game.java&quot; partName=&quot;game.java&quot; title=&quot;game.java&quot; tooltip=&quot;Russian-Roulette/src/game.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Russian-Roulette/src/game.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;503&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;game.java&quot; partName=&quot;game.java&quot; title=&quot;game.java&quot; tooltip=&quot;Russian-Roulette/src/game.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Russian-Roulette/src/game.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;515&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_PdgJUDWfEeeUEYzQrwuleA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="gamestarter.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;gamestarter.java&quot; partName=&quot;gamestarter.java&quot; title=&quot;gamestarter.java&quot; tooltip=&quot;Russian-Roulette/src/gamestarter.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Russian-Roulette/src/gamestarter.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;119&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;gamestarter.java&quot; partName=&quot;gamestarter.java&quot; title=&quot;gamestarter.java&quot; tooltip=&quot;Russian-Roulette/src/gamestarter.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Russian-Roulette/src/gamestarter.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;623&quot; selectionTopPixel=&quot;52&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_hdsJkDWlEeeUEYzQrwuleA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="weapons.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;weapons.java&quot; partName=&quot;weapons.java&quot; title=&quot;weapons.java&quot; tooltip=&quot;Russian-Roulette/src/weapons.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Russian-Roulette/src/weapons.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;391&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;weapons.java&quot; partName=&quot;weapons.java&quot; title=&quot;weapons.java&quot; tooltip=&quot;Russian-Roulette/src/weapons.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Russian-Roulette/src/weapons.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;367&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -239,6 +237,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_zm2OsDWiEeeUEYzQrwuleA" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -312,7 +312,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_b6vEAjQIEeefFYT3c4smXA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_7S0b0DZmEeekraUNpVPIvg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_bGDfRTQIEeefFYT3c4smXA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8BD8cDmIEeeROf6qyE4aRA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_bGDfRTQIEeefFYT3c4smXA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_b6vEAzQIEeefFYT3c4smXA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -336,7 +336,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_b64N8DQIEeefFYT3c4smXA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_7S7wkDZmEeekraUNpVPIvg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_bF6WQTQIEeefFYT3c4smXA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8BNtdDmIEeeROf6qyE4aRA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_bF6WQTQIEeefFYT3c4smXA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_b64N8TQIEeefFYT3c4smXA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2192,7 +2192,7 @@
   <addons xmi:id="_bFA9AzQIEeefFYT3c4smXA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_bFA9BDQIEeefFYT3c4smXA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_bFKt8DQIEeefFYT3c4smXA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_52b9YTZmEeekraUNpVPIvg" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_bFwj0DQIEeefFYT3c4smXA" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_bFwj0TQIEeefFYT3c4smXA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>

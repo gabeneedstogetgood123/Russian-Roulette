@@ -1,17 +1,14 @@
-import java.util.*;
 public class weapons {
-	private static Random generator = new Random();
 	private String [] revolver =new String[6];//hand gun with 6 shots
 	public String[] getRevolver(){
 		return revolver;
 	}
-	public static int reload(){
-		return generator.nextInt(6);//returns a random number from 0 to 5
-	}{
-
-	for(int i=0;i<5;i++){
-		revolver[i]="You got lucky.";
+	public String[] Handgun (String[] getRevolver){
+		String[] convert = new String[6];
+		for (int i=0;i<6;i++){
+			getRevolver[i]="BANG!"+"BETTER LUCK NEXT TIME!";
+		}
+		convert = getRevolver;
+		return convert;
 	}
-	
-}
 }
