@@ -5,7 +5,7 @@ public class game {
 		System.out.println(start.Greeting());
 		Scanner bot = new Scanner(System.in);
 		String response = bot.nextLine();
-		if(response.equalsIgnoreCase("yes")||response.equalsIgnoreCase("sure")){
+		if(response.equalsIgnoreCase("yes")){
 			System.out.println(start.Response());
 		}
 		else {
@@ -17,7 +17,7 @@ public class game {
 		Scanner bot2 = new Scanner(System.in);
 		System.out.println("Would you like to play again?");
 		String response2 = bot2.nextLine();
-		if(response2.equalsIgnoreCase("yes")||response2.equalsIgnoreCase("sure")){
+		if(response2.equalsIgnoreCase("yes")){
 			System.out.println(start.Response());
 		}
 		else {

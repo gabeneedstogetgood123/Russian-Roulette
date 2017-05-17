@@ -14,7 +14,7 @@ public class gamestarter {
 			Scanner AI = new Scanner(System.in);
 			System.out.println("Are you ready to be shot at?");
 			String feedback = AI.nextLine();
-			if(feedback.equalsIgnoreCase("yes")||feedback.equalsIgnoreCase("sure")){
+			if(feedback.equalsIgnoreCase("yes")){
 				System.out.println(loaded.Handgun(filler));
 			}
 			else  {
