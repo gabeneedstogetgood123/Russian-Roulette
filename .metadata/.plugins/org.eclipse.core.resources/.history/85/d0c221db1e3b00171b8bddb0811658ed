@@ -20,15 +20,15 @@ public class gamestarter {
 			else  {
 				System.out.println("BANG!");
 				System.out.println("RIP!");
-				System.out.println("SHOULD HAVE SAID YES!");
+				System.out.println("GUESS YOU WERE NOT LUCKY!");
 				System.out.println("GAME OVER!");
-			}	
+			}
+			
 		}
 		else  {
 			System.out.println("BANG!");
 			System.out.println("RIP!");
-			System.out.println("SHOULD HAVE PICKED 1,2 OR 3!");
-			System.out.println("TRY NOT TO OUTSMART ME!");
+			System.out.println("GUESS YOU WERE NOT LUCKY!");
 			System.out.println("GAME OVER!");
 		}
 		return response;

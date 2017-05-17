@@ -11,18 +11,10 @@ public class game {
 		else {
 			System.out.println("BANG!");
 			System.out.println("RIP!");
-			System.out.println("SHOULD HAVE SAID YES");
+			System.out.println("GUESS YOU WERE NOT LUCKY!");
 			System.out.println("GAME OVER!");
 		}
-		Scanner bot2 = new Scanner(System.in);
-		System.out.println("Would you like to play again?");
-		String response2 = bot2.nextLine();
-		if(response2.equalsIgnoreCase("yes")){
-			System.out.println(start.Response());
-		}
-		else {
-			System.out.println("THEN STAY DOWN!");
-		}
 	}
+	
 	
 }

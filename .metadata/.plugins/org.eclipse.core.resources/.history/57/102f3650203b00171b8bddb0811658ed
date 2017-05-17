@@ -5,12 +5,13 @@ public class weapons {
 	public String[] getRevolver(){
 		return revolver;
 	}
-	public String Handgun (String[] getRevolver){
+	public String[] Handgun (String[] getRevolver){
 		String[] convert = new String[6];
 		for (int i=0;i<6;i++){
-			getRevolver[i]="BANG!"+ " " + "BETTER LUCK NEXT TIME!";
+			getRevolver[i]="BANG!"+"BETTER LUCK NEXT TIME!";
 		}
 		convert = getRevolver;
-		return convert[0];
+		System.out.println(convert);
+		return convert;
 	}
 }

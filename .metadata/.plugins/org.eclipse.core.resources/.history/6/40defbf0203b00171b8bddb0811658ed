@@ -8,7 +8,7 @@ public class weapons {
 	public String Handgun (String[] getRevolver){
 		String[] convert = new String[6];
 		for (int i=0;i<6;i++){
-			getRevolver[i]="BANG!"+ " " + "BETTER LUCK NEXT TIME!";
+			getRevolver[i]="BANG!"+"BETTER LUCK NEXT TIME!";
 		}
 		convert = getRevolver;
 		return convert[0];

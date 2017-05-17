@@ -1,16 +1,14 @@
-import java.util.Arrays;
-
 public class weapons {
 	private String [] revolver =new String[6];//hand gun with 6 shots
 	public String[] getRevolver(){
 		return revolver;
 	}
-	public String Handgun (String[] getRevolver){
+	public String[] Handgun (String[] getRevolver){
 		String[] convert = new String[6];
 		for (int i=0;i<6;i++){
-			getRevolver[i]="BANG!"+ " " + "BETTER LUCK NEXT TIME!";
+			getRevolver[i]="BANG!"+"BETTER LUCK NEXT TIME!";
 		}
 		convert = getRevolver;
-		return convert[0];
+		return convert;
 	}
 }

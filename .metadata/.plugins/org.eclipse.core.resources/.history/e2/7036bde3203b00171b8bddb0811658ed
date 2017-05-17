@@ -28,7 +28,6 @@ public class gamestarter {
 			System.out.println("BANG!");
 			System.out.println("RIP!");
 			System.out.println("SHOULD HAVE PICKED 1,2 OR 3!");
-			System.out.println("TRY NOT TO OUTSMART ME!");
 			System.out.println("GAME OVER!");
 		}
 		return response;
